@@ -1,5 +1,5 @@
 import { Stack } from './stack.mjs';
-import { test } from './test.mjs';
+import { test } from '../test.mjs';
 
 export const testStack = () => {
   // Stack

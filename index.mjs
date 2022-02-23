@@ -1,4 +1,4 @@
-import { testStack } from './test.stack.mjs';
+import { testStack } from './stack/test.stack.mjs';
 
 (function () {
   testStack();
