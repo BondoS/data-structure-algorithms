@@ -6,7 +6,7 @@
 2. Queues <br />
    Queues are very similar to stacks however they use the FIFO “first-in-first- out” paradigm. Which means that the oldest element (the element that was added first) is the next item to be removed.
 
-3. Lined Lists <br />
+3. Linked Lists <br />
    Linked lists are a series of linked nodes where each node points to the next node in the list. Each node has a value and a pointer to the next node. There are also doubly-linked lists in which each node also points to the previous node in the list.
 
    Linked lists use the LIFO“last-in-first-out” method (similar to a stack) where nodes are added to and deleted from the same end.
