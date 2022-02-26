@@ -3,5 +3,5 @@ export const test = (desc, cb) => {
   if (cb()) {
     return console.log(`%c -  test success > ${desc} <`, 'color:green;');
   }
-  return console.log(`%c - test failed > ${desc} <`, 'color:green;');
+  return console.log(`%c - test failed > ${desc} <`, 'color:red;');
 };
