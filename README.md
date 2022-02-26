@@ -21,3 +21,7 @@
 ---
 
 #### To run the project, please use this command `node ./index.mjs`
+
+---
+
+[Reference](https://technicalinterviews.dev/)
