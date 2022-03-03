@@ -34,7 +34,7 @@
 
 3. Quick sort <br />
    Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. and it will keep recursively iterating until we reach a sub-array of size **size 1**. <br />
-   On average quick sort has a runtime of **O(n log n)**.
+   On average quick sort has a runtime of **O(n log n)**. <br />
    There are many different versions of quickSort that pick pivot in different ways.
    1. Always pick first element as pivot.
    2. Always pick last element as pivot.
