@@ -1,4 +1,6 @@
-### Implementation of most famous Data Structures using JavaScript
+### Implementation of most famous Data Structures and Algorithms using JavaScript
+
+## Data structures
 
 1. Stacks <br />
    A stack is a LIFO “last-in-first-out” data structure which means that the newest element (the element which was added last) in the stack will be the first one removed.
@@ -17,6 +19,13 @@
 5. Trees <br />
    A tree is a data structure where a node can have zero or more children. Each node contains a value, and similar to graphs each node can have a connection between other nodes called an edge. A tree is a type of graph but not all graphs are trees.
    In this repo we will demonstrate Binary search trees.
+
+---
+
+## Algorithms
+
+1. Bubble sort <br />
+   Sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 
 ---
 
