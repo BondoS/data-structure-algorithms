@@ -32,6 +32,15 @@
    The MergeSort is a _divide and conquer_ algorithms, it repeatedly divides the array into two halves until we reach a stage where we try to perform MergeSort on a sub-array of **size 1**.
    The time complexity of merge sort is **O(n log n)**.
 
+3. Quick sort <br />
+   Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. and it will keep recursively iterating until we reach a sub-array of size **size 1**. <br />
+   On average quick sort has a runtime of **O(n log n)**.
+   There are many different versions of quickSort that pick pivot in different ways.
+   1. Always pick first element as pivot.
+   2. Always pick last element as pivot.
+   3. Pick a random element as pivot.
+   4. Pick median as pivot.
+
 ---
 
 #### To run the project, please use this command `node ./index.mjs`

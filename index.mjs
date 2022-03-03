@@ -4,6 +4,7 @@ import { testGraph } from './graph/test.graph.mjs';
 import { testLinkedList } from './linkedList/test.linkedList.mjs';
 import { testMergeSortTest } from './mergeSort/test.mergeSort.mjs';
 import { testQueue } from './queue/test.queue.mjs';
+import { testQuickSort } from './quickSort/test.quickSort.mjs';
 import { testStack } from './stack/test.stack.mjs';
 
 (function () {
@@ -14,4 +15,5 @@ import { testStack } from './stack/test.stack.mjs';
   testBinaryTree();
   testBubbleSort();
   testMergeSortTest();
+  testQuickSort();
 })();
