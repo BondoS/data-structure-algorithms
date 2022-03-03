@@ -28,6 +28,10 @@
    Sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
    Bubble sort is famous for being non-performant, with a runtime of **O(n^2)**.
 
+2. Merge sort <br />
+   The MergeSort is a _divide and conquer_ algorithms, it repeatedly divides the array into two halves until we reach a stage where we try to perform MergeSort on a sub-array of **size 1**.
+   The time complexity of merge sort is **O(n log n)**.
+
 ---
 
 #### To run the project, please use this command `node ./index.mjs`
