@@ -23,11 +23,11 @@
    Tree traversal<br />
 
    1. In-Order Traversal<br />
-      Visit the current node in the order it would naturally fall (left child, current node, right child). (Check test cases to understand more)[./binaryTree/test.binaryTree.mjs#L103]
+      Visit the current node in the order it would naturally fall (left child, current node, right child). [Check test cases to understand more](binaryTree/test.binaryTree.mjs#L103)
    2. Pre-Order Traversal<br />
-      Visit the current node before visiting the child nodes (current node, left child, right child). (Check test cases to understand more)[./binaryTree/test.binaryTree.mjs#L105]
+      Visit the current node before visiting the child nodes (current node, left child, right child). [Check test cases to understand more](binaryTree/test.binaryTree.mjs#L105)
    3. Post-Order Traversal<br />
-      Visit the current node after visiting the child nodes (left child, right child, current node). (Check test cases to understand more)[./binaryTree/test.binaryTree.mjs#L107]
+      Visit the current node after visiting the child nodes (left child, right child, current node). [Check test cases to understand more](binaryTree/test.binaryTree.mjs#L107)
 
 ---
 
