@@ -1,3 +1,4 @@
+import { testBinarySearch } from './binarySearch/test.binarySearch.mjs';
 import { testBinaryTree } from './binaryTree/test.binaryTree.mjs';
 import { testBubbleSort } from './bubbleSort/test.bubbleSort.mjs';
 import { testGraph } from './graph/test.graph.mjs';
@@ -18,4 +19,5 @@ import { testStack } from './stack/test.stack.mjs';
   testMergeSortTest();
   testQuickSort();
   testInsertionSort();
+  testBinarySearch();
 })();

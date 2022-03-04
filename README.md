@@ -44,11 +44,16 @@
 
 4. Insertion sort <br />
    Insertion sort picks an element in an array and inserts it in its correct position between 0 and the element preceding it.<br />
-   The worst case run-time for insertion sort is **O(n^2)**,
+   The worst case run-time for insertion sort is **O(n^2)**.
 
+5. Binary search <br />
+   Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.<br />
+   If your list is already sorted, binary search takes **O(log n)** as the size of the array is halved each pass through. But if you have to sort the array first, binary search will take **O(nlogn)** time to complete.
 
 ---
+
 #### Graphs of functions commonly used in the analysis of algorithms, showing the number of operations N versus input size n for each function
+
 <img src="https://user-images.githubusercontent.com/2457873/156711561-02065ddb-0abe-42f9-9ad3-e5f1a1687d8c.png" width="400" height="400"><br />
 By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=50321072
 
@@ -58,5 +63,6 @@ By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?cu
 
 ---
 
-[Reference1](https://technicalinterviews.dev/)
-[Reference2](https://www.geeksforgeeks.org/)
+[Reference 1](https://technicalinterviews.dev/)
+[Reference 2](https://www.geeksforgeeks.org/)
+[Reference 3](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
