@@ -46,13 +46,15 @@
    Insertion sort picks an element in an array and inserts it in its correct position between 0 and the element preceding it.<br />
    The worst case run-time for insertion sort is **O(n^2)**,
 
+
+---
+#### Graphs of functions commonly used in the analysis of algorithms, showing the number of operations N versus input size n for each function
+<img src="https://user-images.githubusercontent.com/2457873/156711561-02065ddb-0abe-42f9-9ad3-e5f1a1687d8c.png" width="400" height="400"><br />
+By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=50321072
+
 ---
 
 #### To run the project, please use this command `node ./index.mjs`
-
----
-![image](https://user-images.githubusercontent.com/2457873/156711561-02065ddb-0abe-42f9-9ad3-e5f1a1687d8c.png)
-Image By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=50321072
 
 ---
 
