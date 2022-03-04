@@ -16,6 +16,14 @@
 4. Graphs <br />
    A graph is a data structure composed of a collection of nodes and edges. Graphs are a non-linear data structure (as opposed to a linked list, stack, or queue). You may also hear nodes referred to as vertices.
 
+   Graph traversal OR search<br />
+
+   1. Depth first<br />
+      Start from the root or any arbitrary node and mark the node as visited and move to the adjacent unmarked node and continue this loop until there is no unmarked adjacent node. Then backtrack and check for other unmarked nodes and traverse them. Finally, print the nodes in the path.
+
+   2. Breadth first<br />
+      Start from the root or any arbitrary node and mark the node as visited then move to all of its' edges one by one, and so on until all nodes are visited.
+
 5. Trees <br />
    A tree is a data structure where a node can have zero or more children. Each node contains a value, and similar to graphs each node can have a connection between other nodes called an edge. A tree is a type of graph but not all graphs are trees.
    In this repo we will demonstrate Binary search trees. <br />

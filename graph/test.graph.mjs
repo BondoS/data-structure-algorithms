@@ -1,5 +1,6 @@
 import { test } from '../test.mjs';
 import { Graph } from './graph.mjs';
+import { graphDFS } from './graphTraversal.mjs';
 
 export const testGraph = () => {
   // directed graph
@@ -37,5 +38,27 @@ export const testGraph = () => {
         node.edges.every((edge) => edge.value !== 'y')
       )
     );
+  });
+
+  test('GraphTraversal DFS', () => {
+    const graph2 = new Graph();
+
+    graph2.addNode('a');
+    graph2.addNode('b');
+    graph2.addNode('c');
+    graph2.addNode('d');
+    graph2.addNode('e');
+    graph2.addNode('f');
+
+    graph2.addEdge('a', 'c');
+    graph2.addEdge('a', 'b');
+    graph2.addEdge('a', 'f');
+    graph2.addEdge('b', 'd');
+    graph2.addEdge('b', 'e');
+    graph2.addEdge('c', 'f');
+    graph2.addEdge('d', 'e');
+    graph2.addEdge('e', 'b');
+
+    return graphDFS(graph2, 'a') === 'a => c => f => b => d => e';
   });
 };
