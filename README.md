@@ -18,7 +18,16 @@
 
 5. Trees <br />
    A tree is a data structure where a node can have zero or more children. Each node contains a value, and similar to graphs each node can have a connection between other nodes called an edge. A tree is a type of graph but not all graphs are trees.
-   In this repo we will demonstrate Binary search trees.
+   In this repo we will demonstrate Binary search trees. <br />
+
+   Tree traversal<br />
+
+   1. In-Order Traversal<br />
+      Visit the current node in the order it would naturally fall (left child, current node, right child).
+   2. Pre-Order Traversal<br />
+      Visit the current node before visiting the child nodes (current node, left child, right child).
+   3. Post-Order Traversal<br />
+      Visit the current node after visiting the child nodes (left child, right child, current node).
 
 ---
 

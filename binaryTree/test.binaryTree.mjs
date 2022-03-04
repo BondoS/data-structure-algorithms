@@ -93,4 +93,16 @@ export const testBinaryTree = () => {
 
     return nodesAddedSuccessfully && nodeRemovedSuccessfully;
   });
+
+  /*
+               7
+         5           11
+      4     6     8    
+    */
+  test('BinaryTreeTraversal, IN_ORDER, (left child, current node, right child)', () =>
+    tree.print('IN_ORDER') === '4 => 5 => 6 => 7 => 8 => 11');
+  test('BinaryTreeTraversal, PRE_ORDER, (current node, left child, right child)', () =>
+    tree.print('PRE_ORDER') === '7 => 5 => 4 => 6 => 11 => 8');
+  test('BinaryTreeTraversal, POST_ORDER, (left child, right child, current node)', () =>
+    tree.print('POST_ORDER') === '4 => 6 => 5 => 8 => 11 => 7');
 };

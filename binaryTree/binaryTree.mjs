@@ -1,3 +1,4 @@
+import { BINARY_TREE_TRAVERSAL } from './treeTraversal.mjs';
 class Node {
   constructor(value) {
     this.value = value;
@@ -120,5 +121,13 @@ export default class BinaryTree {
       }
       currLeftParent.leftChild = leftSubTree;
     }
+  }
+
+  print(traversalType = 'IN_ORDER') {
+    let result = '';
+    const visitFunction = (node) =>
+      (result += result.length === 0 ? node.value : ` => ${node.value}`);
+    BINARY_TREE_TRAVERSAL[traversalType](this.root, visitFunction);
+    return result;
   }
 }
