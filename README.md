@@ -36,10 +36,15 @@
    Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. and it will keep recursively iterating until we reach a sub-array of size **size 1**. <br />
    On average quick sort has a runtime of **O(n log n)**. <br />
    There are many different versions of quickSort that pick pivot in different ways.
+
    1. Always pick first element as pivot.
    2. Always pick last element as pivot.
    3. Pick a random element as pivot.
    4. Pick median as pivot.
+
+4. Insertion sort <br />
+   Insertion sort picks an element in an array and inserts it in its correct position between 0 and the element preceding it.<br />
+   The worst case run-time for insertion sort is **O(n^2)**,
 
 ---
 
@@ -47,4 +52,5 @@
 
 ---
 
-[Reference](https://technicalinterviews.dev/)
+[Reference1](https://technicalinterviews.dev/)
+[Reference2](https://www.geeksforgeeks.org/)
