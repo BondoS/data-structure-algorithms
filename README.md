@@ -51,6 +51,10 @@
 #### To run the project, please use this command `node ./index.mjs`
 
 ---
+![image](https://user-images.githubusercontent.com/2457873/156711561-02065ddb-0abe-42f9-9ad3-e5f1a1687d8c.png)
+Image By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=50321072
+
+---
 
 [Reference1](https://technicalinterviews.dev/)
 [Reference2](https://www.geeksforgeeks.org/)
