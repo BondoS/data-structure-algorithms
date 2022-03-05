@@ -1,6 +1,6 @@
 import { test } from '../test.mjs';
 import { Graph } from './graph.mjs';
-import { graphDFS } from './graphTraversal.mjs';
+import { graphBFS, graphDFS } from './graphTraversal.mjs';
 
 export const testGraph = () => {
   // directed graph
@@ -60,5 +60,27 @@ export const testGraph = () => {
     graph2.addEdge('e', 'b');
 
     return graphDFS(graph2, 'a') === 'a => c => f => b => d => e';
+  });
+
+  test('GraphTraversal BFS', () => {
+    const graph3 = new Graph();
+
+    graph3.addNode('a');
+    graph3.addNode('b');
+    graph3.addNode('c');
+    graph3.addNode('d');
+    graph3.addNode('e');
+    graph3.addNode('f');
+
+    graph3.addEdge('a', 'c');
+    graph3.addEdge('a', 'b');
+    graph3.addEdge('a', 'f');
+    graph3.addEdge('b', 'd');
+    graph3.addEdge('b', 'e');
+    graph3.addEdge('c', 'f');
+    graph3.addEdge('d', 'e');
+    graph3.addEdge('e', 'b');
+
+    return graphBFS(graph3, 'a') === 'a => c => b => f => d => e';
   });
 };
