@@ -10,14 +10,14 @@ import { testQuickSort } from './quickSort/test.quickSort.mjs';
 import { testStack } from './stack/test.stack.mjs';
 
 (function () {
-  // testStack();
-  // testQueue();
-  // testLinkedList();
+  testStack();
+  testQueue();
+  testLinkedList();
   testGraph();
-  // testBinaryTree();
-  // testBubbleSort();
-  // testMergeSortTest();
-  // testQuickSort();
-  // testInsertionSort();
-  // testBinarySearch();
+  testBinaryTree();
+  testBubbleSort();
+  testMergeSortTest();
+  testQuickSort();
+  testInsertionSort();
+  testBinarySearch();
 })();
