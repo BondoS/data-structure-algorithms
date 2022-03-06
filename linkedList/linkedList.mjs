@@ -99,7 +99,7 @@ export class LinkedList {
       const nodeToDelete = currentNode;
       previousNode.next = currentNode.next;
       /* 
-      Check if we are deleting the tail,
+       Check if we are deleting the tail,
        then set the tail to item before the one we are deleting 
        */
       if (currentNode.next === null) {
@@ -108,5 +108,38 @@ export class LinkedList {
       this.length--;
       return nodeToDelete;
     }
+  }
+
+  traverse() {
+    let result = [];
+    let currentNode = this.head;
+    while (currentNode) {
+      result.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    return result.join(' => ');
+  }
+
+  reverse() {
+    // Switch head and tail locations
+    var currentNode = this.head;
+    this.head = this.tail;
+    this.tail = currentNode;
+    // Previous node to the current head is null, then prevNode should be initiated with null.
+    let prevNode = null;
+    // Loop until currentNode === null
+    while (currentNode) {
+      // CurrentNode.next should be looking to previous node instead of next node,
+      // but before we override it, we need to save it for the next loop iteration.
+      const next = currentNode.next;
+      // Now currentNode.next is point to the previous item, it is now > "REVERSED" <.
+      currentNode.next = prevNode;
+      // We'll need save prevNode for the next iteration.
+      prevNode = currentNode;
+      // Move currentNode pointer to the next node in line for the next iteration.
+      currentNode = next;
+    }
+    // Return this to enable chaining
+    return this;
   }
 }
