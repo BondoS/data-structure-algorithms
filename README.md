@@ -11,7 +11,14 @@
 3. Linked Lists <br />
    Linked lists are a series of linked nodes where each node points to the next node in the list. Each node has a value and a pointer to the next node. There are also doubly-linked lists in which each node also points to the previous node in the list.
 
-   Linked lists use the LIFO“last-in-first-out” method (similar to a stack) where nodes are added to and deleted from the same end.
+   Linked lists use the **LIFO “last-in-first-out”** method (similar to a stack) where nodes are added to and deleted from the same end.
+   |Single linked list | Worst time complexity | Worst space complexity |
+   | --- | --- | --- |
+   | Insertion ['push'](linkedList/linkedList.mjs#L23) | O(1) | O(1) |
+   | Deletion ['pop'](linkedList/linkedList.mjs#L39), ['deleteByIndex'](linkedList/linkedList.mjs#L91) | O(n) | O(1) |
+   | Searching ['get'](linkedList/linkedList.mjs#L70) | O(n) | O(1) |
+   | [Traversal](linkedList/linkedList.mjs#L133) | O(n) | O(1) |
+   | [Reverse](linkedList/linkedList.mjs#L47) | O(n) | O(1) |
 
 4. Graphs <br />
    A graph is a data structure composed of a collection of nodes and edges. Graphs are a non-linear data structure (as opposed to a linked list, stack, or queue). You may also hear nodes referred to as vertices.
@@ -83,3 +90,4 @@ By Cmglee - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?cu
 [Reference 1](https://technicalinterviews.dev/)
 [Reference 2](https://www.geeksforgeeks.org/)
 [Reference 3](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+[Reference 4](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/)

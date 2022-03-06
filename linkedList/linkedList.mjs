@@ -16,6 +16,10 @@ export class LinkedList {
     return this.length === 0;
   }
 
+  /*
+    Time: O(1)
+    Space: O(1)
+  */
   push(value) {
     const newNode = new Node(value);
     if (this.isEmpty()) {
@@ -28,6 +32,10 @@ export class LinkedList {
     this.length++;
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   pop() {
     // Empty list, return null
     if (this.isEmpty()) {
@@ -55,6 +63,10 @@ export class LinkedList {
     }
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   get(index) {
     if (index < 0 || index > this.length || this.isEmpty()) {
       return null;
@@ -72,6 +84,10 @@ export class LinkedList {
     return currentNode;
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   delete(index) {
     if (index < 0 || index > this.length || this.isEmpty()) {
       return null;
@@ -110,6 +126,10 @@ export class LinkedList {
     }
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   traverse() {
     let result = [];
     let currentNode = this.head;
@@ -120,6 +140,10 @@ export class LinkedList {
     return result.join(' => ');
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   reverse() {
     // Switch head and tail locations
     var currentNode = this.head;
@@ -127,11 +151,12 @@ export class LinkedList {
     this.tail = currentNode;
     // Previous node to the current head is null, then prevNode should be initiated with null.
     let prevNode = null;
+    let next;
     // Loop until currentNode === null
     while (currentNode) {
-      // CurrentNode.next should be looking to previous node instead of next node,
+      // CurrentNode.next should be pointing to previous node instead of next node,
       // but before we override it, we need to save it for the next loop iteration.
-      const next = currentNode.next;
+      next = currentNode.next;
       // Now currentNode.next is point to the previous item, it is now > "REVERSED" <.
       currentNode.next = prevNode;
       // We'll need save prevNode for the next iteration.
