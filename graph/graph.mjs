@@ -11,10 +11,16 @@ export class Graph {
     this.nodes = [];
   }
 
+  /*
+    Time: O(1)
+  */
   addNode(value) {
     this.nodes.push(new Node(value));
   }
 
+  /*
+    Time: O(n^2)
+  */
   removeNode(value) {
     this.nodes = this.nodes.filter((node) => node.value !== value);
     this.nodes.forEach((node) => {
@@ -22,10 +28,16 @@ export class Graph {
     });
   }
 
+  /*
+    Time: O(n)
+  */
   getNode(value) {
     return this.nodes.find((node) => node.value === value);
   }
 
+  /*
+    Time: O(n)
+  */
   addEdge(value1, value2) {
     const node1 = this.getNode(value1);
     const node2 = this.getNode(value2);
