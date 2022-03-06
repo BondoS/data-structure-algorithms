@@ -13,14 +13,16 @@
 
    Linked lists use the **LIFO “last-in-first-out”** method (similar to a stack) where nodes are added to and deleted from the same end.<br />
 
-   Time and space complexity
-   |Single linked list | Worst time complexity | Worst space complexity |
-   | --- | --- | --- |
-   | Insertion ['push'](linkedList/linkedList.mjs#L23) | O(1) | O(1) |
-   | Deletion ['pop'](linkedList/linkedList.mjs#L39), ['deleteByIndex'](linkedList/linkedList.mjs#L91) | O(n) | O(1) |
-   | Searching ['get'](linkedList/linkedList.mjs#L70) | O(n) | O(1) |
-   | [Traversal](linkedList/linkedList.mjs#L133) | O(n) | O(1) |
-   | [Reverse](linkedList/linkedList.mjs#L47) | O(n) | O(1) |
+   #### Time and space complexity
+
+   | Single linked list                                                                                | Worst time complexity | Worst space complexity |
+   | ------------------------------------------------------------------------------------------------- | --------------------- | ---------------------- |
+   | Insertion ['push'](linkedList/linkedList.mjs#L23)                                                 | O(1)                  | O(1)                   |
+   | Deletion ['pop'](linkedList/linkedList.mjs#L39), ['deleteByIndex'](linkedList/linkedList.mjs#L91) | O(n)                  | O(1)                   |
+   | Searching ['get'](linkedList/linkedList.mjs#L70)                                                  | O(n)                  | O(1)                   |
+   | [Traversal](linkedList/linkedList.mjs#L133)                                                       | O(n)                  | O(1)                   |
+   | [Reverse](linkedList/linkedList.mjs#L47)                                                          | O(n)                  | O(1)                   |
+
    <br />
 
 4. Graphs <br />
@@ -34,16 +36,18 @@
    2. Breadth first<br />
       Start from the root or any arbitrary node and mark the node as visited then move to all of its' edges one by one, and so on until all nodes are visited. <br />
 
-   Time and space complexity
-   |Un-directed un-weighted adjacency list graph | Worst time complexity | Worst space complexity |
-   | --- | --- | --- |
-   | [Add node](graph\graph.mjs#L17) | O(1) | |
-   | [Remove node](graph\graph.mjs#L24) | O(n^2) | |
-   | [Get node](graph\graph.mjs#L34) | O(n) | |
-   | [Add edge](graph\graph.mjs#L41) | O(n) | |
-   | [Add edge](graph\graph.mjs#L41) | O(n) | |
-   | [DFS Depth first search](graph\graphTraversal.mjs#L7) | O(n^2) | O(1) |
-   | [BFS Breadth first search](graph\graphTraversal.mjs#L7) | O(n^2) | O(1) |
+   #### Time and space complexity
+
+   | Un-directed un-weighted adjacency list graph            | Worst time complexity | Worst space complexity |
+   | ------------------------------------------------------- | --------------------- | ---------------------- |
+   | [Add node](graph\graph.mjs#L17)                         | O(1)                  |                        |
+   | [Remove node](graph\graph.mjs#L24)                      | O(n^2)                |                        |
+   | [Get node](graph\graph.mjs#L34)                         | O(n)                  |                        |
+   | [Add edge](graph\graph.mjs#L41)                         | O(n)                  |                        |
+   | [Add edge](graph\graph.mjs#L41)                         | O(n)                  |                        |
+   | [DFS Depth first search](graph\graphTraversal.mjs#L7)   | O(n^2)                | O(1)                   |
+   | [BFS Breadth first search](graph\graphTraversal.mjs#L7) | O(n^2)                | O(1)                   |
+
    <br />
 
 5. Trees <br />
@@ -57,7 +61,18 @@
    2. Pre-Order Traversal<br />
       Visit the current node before visiting the child nodes (current node, left child, right child). [Check test cases to understand more](binaryTree/test.binaryTree.mjs#L105)
    3. Post-Order Traversal<br />
-      Visit the current node after visiting the child nodes (left child, right child, current node). [Check test cases to understand more](binaryTree/test.binaryTree.mjs#L107)
+      Visit the current node after visiting the child nodes (left child, right child, current node). [Check test cases to understand more](binaryTree/test.binaryTree.mjs#L107)<br />
+      <br />
+
+   #### Time and space complexity
+
+   | Binary tree                                   | Worst time complexity | Worst space complexity |
+   | --------------------------------------------- | --------------------- | ---------------------- |
+   | [Add child](binaryTree\binaryTree.mjs#L19)    | O(1)                  | O(1)                   |
+   | [Remove child](binaryTree\binaryTree.mjs#L56) | O(n)                  | O(1)                   |
+   | [Traversal](binaryTree\binaryTree.mjs#L138)   | O(n)                  | O(1)                   |
+
+   <br />
 
 ---
 
