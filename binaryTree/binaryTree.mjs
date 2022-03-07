@@ -12,6 +12,10 @@ export default class BinaryTree {
     this.root = null;
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   addChild(value) {
     if (this.root === null) {
       this.root = new Node(value);
@@ -45,6 +49,10 @@ export default class BinaryTree {
     }
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   removeChild(value) {
     let currentNode = this.root;
     let found = false;
@@ -123,11 +131,14 @@ export default class BinaryTree {
     }
   }
 
+  /*
+    Time: O(n)
+    Space: O(1)
+  */
   print(traversalType = 'IN_ORDER') {
-    let result = '';
-    const visitFunction = (node) =>
-      (result += result.length === 0 ? node.value : ` => ${node.value}`);
+    let result = [];
+    const visitFunction = (node) => result.push(node.value);
     BINARY_TREE_TRAVERSAL[traversalType](this.root, visitFunction);
-    return result;
+    return result.join(' => ');
   }
 }
