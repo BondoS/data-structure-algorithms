@@ -21,7 +21,7 @@
    | Deletion ['pop'](linkedList/linkedList.mjs#L39), ['deleteByIndex'](linkedList/linkedList.mjs#L91) | O(n)                  | O(1)                   |
    | Searching ['get'](linkedList/linkedList.mjs#L70)                                                  | O(n)                  | O(1)                   |
    | [Traversal](linkedList/linkedList.mjs#L133)                                                       | O(n)                  | O(1)                   |
-   | [Reverse](linkedList/linkedList.mjs#L47)                                                          | O(n)                  | O(1)                   |
+   | [Reverse](linkedList/linkedList.mjs#L147)                                                          | O(n)                  | O(1)                   |
 
    <br />
 
