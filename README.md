@@ -40,13 +40,13 @@
 
    | Un-directed un-weighted adjacency list graph            | Worst time complexity | Worst space complexity |
    | ------------------------------------------------------- | --------------------- | ---------------------- |
-   | [Add node](graph\graph.mjs#L17)                         | O(1)                  |                        |
-   | [Remove node](graph\graph.mjs#L24)                      | O(n^2)                |                        |
-   | [Get node](graph\graph.mjs#L34)                         | O(n)                  |                        |
-   | [Add edge](graph\graph.mjs#L41)                         | O(n)                  |                        |
-   | [Add edge](graph\graph.mjs#L41)                         | O(n)                  |                        |
-   | [DFS Depth first search](graph\graphTraversal.mjs#L7)   | O(n^2)                | O(1)                   |
-   | [BFS Breadth first search](graph\graphTraversal.mjs#L7) | O(n^2)                | O(1)                   |
+   | [Add node](graph/graph.mjs#L17)                         | O(1)                  |                        |
+   | [Remove node](graph/graph.mjs#L24)                      | O(n^2)                |                        |
+   | [Get node](graph/graph.mjs#L34)                         | O(n)                  |                        |
+   | [Add edge](graph/graph.mjs#L41)                         | O(n)                  |                        |
+   | [Add edge](graph/graph.mjs#L41)                         | O(n)                  |                        |
+   | [DFS Depth first search](graph/graphTraversal.mjs#L7)   | O(n^2)                | O(1)                   |
+   | [BFS Breadth first search](graph/graphTraversal.mjs#L7) | O(n^2)                | O(1)                   |
 
    <br />
 
@@ -68,9 +68,9 @@
 
    | Binary tree                                   | Worst time complexity | Worst space complexity |
    | --------------------------------------------- | --------------------- | ---------------------- |
-   | [Add child](binaryTree\binaryTree.mjs#L19)    | O(1)                  | O(1)                   |
-   | [Remove child](binaryTree\binaryTree.mjs#L56) | O(n)                  | O(1)                   |
-   | [Traversal](binaryTree\binaryTree.mjs#L138)   | O(n)                  | O(1)                   |
+   | [Add child](binaryTree/binaryTree.mjs#L19)    | O(1)                  | O(1)                   |
+   | [Remove child](binaryTree/binaryTree.mjs#L56) | O(n)                  | O(1)                   |
+   | [Traversal](binaryTree/binaryTree.mjs#L138)   | O(n)                  | O(1)                   |
 
    <br />
 
