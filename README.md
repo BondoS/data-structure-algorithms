@@ -78,15 +78,23 @@
 
 ## Algorithms
 
-1. Bubble sort <br />
+1. Selection sort <br />
+   The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two sub-arrays in a given array.
+
+   1. The sub-array which is already sorted.
+   2. Remaining sub-array which is unsorted.<br />
+      In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted sub-array is picked and moved to the sorted sub-array.<br />
+      time complexity **O(n^2)**
+
+2. Bubble sort <br />
    Sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
    Bubble sort is famous for being non-performant, with a runtime of **O(n^2)**.
 
-2. Merge sort <br />
+3. Merge sort <br />
    The MergeSort is a _divide and conquer_ algorithms, it repeatedly divides the array into two halves until we reach a stage where we try to perform MergeSort on a sub-array of **size 1**.
    The time complexity of merge sort is **O(n log n)**.
 
-3. Quick sort <br />
+4. Quick sort <br />
    Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. and it will keep recursively iterating until we reach a sub-array of size **size 1**. <br />
    On average quick sort has a runtime of **O(n log n)**. <br />
    There are many different versions of quickSort that pick pivot in different ways.
@@ -96,11 +104,11 @@
    3. Pick a random element as pivot.
    4. Pick median as pivot.
 
-4. Insertion sort <br />
+5. Insertion sort <br />
    Insertion sort picks an element in an array and inserts it in its correct position between 0 and the element preceding it.<br />
    The worst case run-time for insertion sort is **O(n^2)**.
 
-5. Binary search <br />
+6. Binary search <br />
    Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.<br />
    If your list is already sorted, binary search takes **O(log n)** as the size of the array is halved each pass through. But if you have to sort the array first, binary search will take **O(nlogn)** time to complete.
 

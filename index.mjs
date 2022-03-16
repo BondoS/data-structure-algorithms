@@ -7,6 +7,7 @@ import { testLinkedList } from './linkedList/test.linkedList.mjs';
 import { testMergeSortTest } from './mergeSort/test.mergeSort.mjs';
 import { testQueue } from './queue/test.queue.mjs';
 import { testQuickSort } from './quickSort/test.quickSort.mjs';
+import { testSelectionSort } from './selectionSort/test.selectionSort.mjs';
 import { testStack } from './stack/test.stack.mjs';
 
 (function () {
@@ -20,4 +21,5 @@ import { testStack } from './stack/test.stack.mjs';
   testQuickSort();
   testInsertionSort();
   testBinarySearch();
+  testSelectionSort();
 })();
